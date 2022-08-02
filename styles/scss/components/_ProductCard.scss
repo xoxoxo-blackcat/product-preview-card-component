@@ -1,0 +1,54 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: $card-height-mobile;
+    width: $card-width-mobile;
+    margin: 28px 0;
+    border-radius: $CardBorderRadius;
+    background-color: $WhiteColor;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        border-radius: $CardBorderRadius $CardBorderRadius 0 0;
+    }
+
+    &__section {
+        width: 100%;
+        
+        &:first-child {
+            height: $card-first-section-height-mobile;
+        }
+
+        &:last-child {
+            height: $card-last-section-height-mobile;
+            border-radius: 0 0 $CardBorderRadius $CardBorderRadius;
+        }
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        height: $card-height-desktop;
+        width: $card-width-desktop;
+        margin: 0;
+
+        &__image {
+            border-radius: $CardBorderRadius 0 0 $CardBorderRadius;
+        }
+
+        &__section {
+            &:first-child, &:last-child {
+                height: 100%;
+                width: 50%;
+            }
+
+            &:first-child {
+                border-radius: $CardBorderRadius 0 0 $CardBorderRadius;
+            }
+
+            &:last-child {
+                border-radius: 0 $CardBorderRadius $CardBorderRadius 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: 11px; 
+    text-align: center; 
+    
+    &__link {
+        color: hsl(228, 83%, 61%);
+
+        @media (min-width: $breakpoint-mobile) {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}

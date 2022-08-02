@@ -1,0 +1,19 @@
+$CreamColor: hsl(30, 38%, 92%);
+$DarkCyanColor: hsl(158, 36%, 37%);
+$DarkGrayishBlueColor: hsl(228, 12%, 48%);
+$VeryDarkBlueColor: hsl(212, 21%, 14%);
+$WhiteColor: hsl(0, 0%, 100%);
+
+$CardBorderRadius: 10px;
+
+$breakpoint-desktop: 1440px;
+$breakpoint-mobile: 375px;
+
+$card-height-desktop: 450px;
+$card-width-desktop: 600px;
+
+$card-height-mobile: 610px;
+$card-width-mobile: 345px;
+
+$card-first-section-height-mobile: .4 * $card-height-mobile;
+$card-last-section-height-mobile: $card-height-mobile - $card-first-section-height-mobile;

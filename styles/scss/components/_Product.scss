@@ -1,0 +1,80 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding: 32px;
+    }
+
+    &__button {
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 48px;
+        width: 100%;
+        background-color: $DarkCyanColor;
+        border-radius: 8px;
+        color: $WhiteColor;
+        font-size: 1em;
+        font-family: 'Montserrat', sans-serif;
+
+        &-icon {
+            font-size: 1.1em;
+        }
+
+        &:hover {
+            background-color: hsl(156, 42%, 18%);
+        }
+
+        &:active {
+            transform: scale(.9);
+        }
+    }
+
+    &__category, &__description, &__price--old {
+        color: $DarkGrayishBlueColor;
+        
+    }
+
+    &__category {
+        letter-spacing: 5px;
+        font-size: .85em;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        line-height: 23px;
+    }
+
+    &__price--current, &__title {
+        font-family: 'Fraunces', serif;
+        font-size: 2.25em;
+    }
+
+    &__price {
+        &-wrapper {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &--current {
+            color: $DarkCyanColor;
+        }
+
+        &--old {
+            font-size: .9em;
+            text-decoration: line-through;
+        }
+    }
+
+    &__title {
+        line-height: 1em;
+    }
+}

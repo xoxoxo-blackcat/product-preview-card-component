@@ -1,0 +1,33 @@
+.app {
+    height: max-content;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: $VeryDarkBlueColor;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    &__main {
+        display: none;
+
+        @media (min-width: $breakpoint-mobile) {
+            height: 100%;
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $CreamColor;
+        }
+    }
+
+    &__footer {
+        color: #FFF; 
+
+        @media (min-width: $breakpoint-mobile) {
+            color: #000;
+        }
+    }
+}
